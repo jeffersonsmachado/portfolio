@@ -1,5 +1,0 @@
-.classApp {
-    display: grid;
-    grid-template: 'navbar'
-        'home';
-}

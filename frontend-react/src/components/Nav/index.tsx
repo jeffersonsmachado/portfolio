@@ -1,17 +1,24 @@
-import { Fragment } from 'react';
-import './style.css';
+import Avatar from '../Avatar';
+import { Navbar, Navlink } from './style'
 
-function Nav () {
+function Nav() {
     return (
-        <Fragment>
-            <nav className='navbar'>
-                <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                </ul>
-            </nav>
-        </Fragment>
+        <>
+            <Navbar>
+                <div className="">
+                    <Avatar />
+                </div>
+                <div className="">
+                    <Navlink href=''>NavLink</Navlink>
+                    <Navlink href=''>NavLink</Navlink>
+                    <Navlink href=''>NavLink</Navlink>
+                    <Navlink href=''>NavLink</Navlink>
+                    <Navlink href=''>NavLink</Navlink>
+                    <Navlink href=''>NavLink</Navlink>
+                </div>
+            </Navbar>
+        </>
     );
 }
- 
+
 export default Nav;
