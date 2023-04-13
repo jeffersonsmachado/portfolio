@@ -1,13 +1,21 @@
-import tw, { css } from 'twin.macro'
-import styled from 'styled-components'
+import tw, { css } from "twin.macro";
+import styled from "styled-components";
 
 const Figure = styled.figure(() => [
-  tw`aspect-square bg-red-400`,
-  css`
-    & img {
-      ${ tw`bg-white p-4 w-60 aspect-square rounded-full mx-auto` }
-    }
-  `
-])
+	tw`
+		flex flex-col min-h-full
+		items-center justify-between
+		// bg-red-800
+	`,
+	css`
+		& img {
+			${tw`
+				mx-auto flex-1
+				aspect-square rounded-full
+				bg-white
+			`}
+		}
+	`,
+]);
 
-export { Figure }
+export { Figure };
