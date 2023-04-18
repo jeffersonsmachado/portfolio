@@ -1,2 +1,2 @@
 .vscode/*
-.data/databases/mysql/volumes/*
+data/**/volumes
